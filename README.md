@@ -2,14 +2,14 @@
 - GS 1 de C#
 
 
-#### Problema abordado
+### Problema abordado
 No ambiente de atendimento presencial(mercados, padarias, farmácias...) a contagem manual de dinheiro ainda é uma atividade frequente, que envolve algumas dificuldades recorrentes:
 - Lentidão na conferência de notas e moedas, especialmente em horários de pico.
 - Erros humanos, tanto na identificação dos valores quanto na soma total do pagamento.
 - Cansaço físico e mental devido à repetição constante dessa tarefa.
 
 
-#### Importância no contexto do futuro de trabalho
+### Importância no contexto do futuro de trabalho
 A automação inteligente está transformando a forma como os profissionais desempenham suas atividades. A tendência futura é que:
 - Funções repetitivas sejam assistidas ou executadas por sistemas inteligentes;
 - Profissionais passem a atuar de forma mais analítica, interpessoal e estratégica, deixando atividades mecânicas para máquinas;
@@ -17,7 +17,7 @@ A automação inteligente está transformando a forma como os profissionais dese
 - Tecnologias como visão computacional e machine learning tradicional se tornem tão comuns quanto PDVs e leitores de código de barras.
 
 
-#### Solução
+### Solução
 Diante desse cenário, o Scanner Real busca resolver o problema da identificação, classificação e contagem manual de cédulas e moedas, auxiliando o atendente com um sistema automatizado baseado em visão computacional e machine learning. As principais vantagens do projeto são:
 - Humanização do trabalho, por retirar do atendente a carga de tarefas cansativas.
 - Promover inclusão, ao facilitar e simplificar a contagem de cédulas e moedas.
@@ -26,7 +26,7 @@ Diante desse cenário, o Scanner Real busca resolver o problema da identificaç�
 A solução não substitui o atendente, mas amplia suas capacidades e eficiência.
 
 
-#### Resultados e Impactos esperados
+### Resultados e Impactos esperados
 Com a implementação do sistema de automatização de identificação, classificação e contagem de notas e moedas, espera-se resultados como:
 ###### Eficiência
 - Redução do tempo de contagem do dinheiro, acelerando o atendimento.
