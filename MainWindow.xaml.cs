@@ -46,7 +46,7 @@ namespace scannerReal
                     if (e.IsSuccess)
                     {
                         // Aguarda um pouco para o player carregar
-                        await System.Threading.Tasks.Task.Delay(500);
+                        await System.Threading.Tasks.Task.Delay(700);
 
                         // Clica no botão de tela cheia automaticamente
                         await webView.CoreWebView2.ExecuteScriptAsync(@"
@@ -56,6 +56,8 @@ namespace scannerReal
                                 var settingsButton = document.querySelector('.ytp-settings-button');
                                 
                                 if (video) {
+                                    video.pause();
+
                                     // Tentar definir qualidade máxima através da API do player
                                     if (window.ytplayer && window.ytplayer.config) {
                                         var player = document.querySelector('#movie_player');
@@ -65,6 +67,7 @@ namespace scannerReal
                                         }
                                     }
 
+                                    // deixar fullscreen
                                     if (button) {
                                         button.click();
                                     } else {
@@ -73,7 +76,7 @@ namespace scannerReal
 
                                     video.play();
                                 }
-                            }, 500);
+                            }, 700);
                         ");
                     }
                 };
