@@ -36,7 +36,7 @@ namespace scannerReal
             scrollViewer.ScrollToEnd();
 
             // Resposta do sistema (esquerda)
-            await System.Threading.Tasks.Task.Delay(900);
+            await System.Threading.Tasks.Task.Delay(400);
             mensagens.Add(new MensagemBot("Claro! Deu um Total de R$25,65", "images/1Analisado.png"));
             scrollViewer.ScrollToEnd();
         }

@@ -46,7 +46,7 @@ namespace scannerReal
                     if (e.IsSuccess)
                     {
                         // Aguarda um pouco para o player carregar
-                        await System.Threading.Tasks.Task.Delay(200);
+                        await System.Threading.Tasks.Task.Delay(500);
 
                         // Clica no botão de tela cheia automaticamente
                         await webView.CoreWebView2.ExecuteScriptAsync(@"
@@ -73,7 +73,7 @@ namespace scannerReal
 
                                     video.play();
                                 }
-                            }, 200);
+                            }, 500);
                         ");
                     }
                 };
