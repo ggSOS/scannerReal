@@ -1,0 +1,63 @@
+﻿<Window x:Class="scannerReal.ScannerRealChat"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:scannerReal"
+        mc:Ignorable="d"
+        Title="ScannerRealChat" Height="450" Width="800">
+    <Grid Background="#1c2022">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!-- Área do chat -->
+        <ScrollViewer x:Name="scrollViewer"
+                      Grid.Row="0"
+                      VerticalScrollBarVisibility="Auto"
+                      Padding="10">
+            <ItemsControl x:Name="chatItemsControl">
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <Border Background="{Binding Background}"
+                                CornerRadius="10"
+                                Padding="12,8"
+                                Margin="{Binding Margin}"
+                                HorizontalAlignment="{Binding Alinhamento}"
+                                MaxWidth="300">
+                            <StackPanel>
+                                <TextBlock Text="{Binding Texto}"
+                                          Foreground="White"
+                                          TextWrapping="Wrap"
+                                          FontSize="14"/>
+
+                                <Image Source="{Binding CaminhoImagem}"
+                                           MaxWidth="250"
+                                           MaxHeight="200"
+                                           Stretch="Uniform"
+                                           Margin="0,0,0,0"
+                                       HorizontalAlignment="Left">
+                                </Image>
+                            </StackPanel>
+                        </Border>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
+        </ScrollViewer>
+
+        <!-- Botão para adicionar mensagem -->
+        <Button x:Name="btnEnviar" 
+                Grid.Row="1" 
+                Content="Enviar Consulta Simulada"
+                FontFamily="Century Gothic"
+                FontWeight="Bold"
+                FontSize="15"
+                Height="40" 
+                Margin="10"
+                Click="btnEnviar_Click"
+                Foreground="#ed145b"
+                Background="#1c2022"
+                BorderBrush="#ed145b"/>
+    </Grid>
+</Window>
